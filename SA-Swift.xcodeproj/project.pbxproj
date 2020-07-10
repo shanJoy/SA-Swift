@@ -13,6 +13,11 @@
 		B12E70B024B81A6A00277863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12E70AE24B81A6A00277863 /* Main.storyboard */; };
 		B12E70B224B81A6B00277863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12E70B124B81A6B00277863 /* Assets.xcassets */; };
 		B12E70B524B81A6B00277863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12E70B324B81A6B00277863 /* LaunchScreen.storyboard */; };
+		B12E70CA24B84E5300277863 /* GTNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E70C924B84E5300277863 /* GTNewsViewController.swift */; };
+		B12E70CC24B84EE800277863 /* GTVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E70CB24B84EE800277863 /* GTVideoViewController.swift */; };
+		B12E70CE24B84F4600277863 /* GTMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E70CD24B84F4600277863 /* GTMineViewController.swift */; };
+		B12E70D024B84F8300277863 /* GTRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E70CF24B84F8300277863 /* GTRecommendController.swift */; };
+		B12E70D224B8527600277863 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B12E70D124B8527500277863 /* icon.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		B12E70B124B81A6B00277863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B12E70B424B81A6B00277863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B12E70B624B81A6B00277863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B12E70C924B84E5300277863 /* GTNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTNewsViewController.swift; sourceTree = "<group>"; };
+		B12E70CB24B84EE800277863 /* GTVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTVideoViewController.swift; sourceTree = "<group>"; };
+		B12E70CD24B84F4600277863 /* GTMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTMineViewController.swift; sourceTree = "<group>"; };
+		B12E70CF24B84F8300277863 /* GTRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTRecommendController.swift; sourceTree = "<group>"; };
+		B12E70D124B8527500277863 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,12 @@
 		B12E70A724B81A6A00277863 /* SA-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				B12E70BC24B84C9600277863 /* News */,
+				B12E70BF24B84CC200277863 /* Video */,
+				B12E70BE24B84CB100277863 /* Recommend */,
+				B12E70BD24B84CA200277863 /* Mine */,
+				B12E70C024B84D0300277863 /* Utils */,
+				B12E70D124B8527500277863 /* icon.bundle */,
 				B12E70A824B81A6A00277863 /* AppDelegate.swift */,
 				B12E70AA24B81A6A00277863 /* SceneDelegate.swift */,
 				B12E70AC24B81A6A00277863 /* ViewController.swift */,
@@ -65,6 +81,109 @@
 				B12E70B624B81A6B00277863 /* Info.plist */,
 			);
 			path = "SA-Swift";
+			sourceTree = "<group>";
+		};
+		B12E70BC24B84C9600277863 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				B12E70C124B84D2000277863 /* Model */,
+				B12E70C224B84D2B00277863 /* View */,
+				B12E70C324B84D3200277863 /* Controller */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		B12E70BD24B84CA200277863 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B12E70C624B84D7A00277863 /* Model */,
+				B12E70C724B84D8300277863 /* View */,
+				B12E70C824B84D9A00277863 /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B12E70BE24B84CB100277863 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				B12E70C524B84D6500277863 /* Controller */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		B12E70BF24B84CC200277863 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				B12E70C424B84D4800277863 /* Controller */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		B12E70C024B84D0300277863 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B12E70C124B84D2000277863 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B12E70C224B84D2B00277863 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B12E70C324B84D3200277863 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B12E70C924B84E5300277863 /* GTNewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B12E70C424B84D4800277863 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B12E70CB24B84EE800277863 /* GTVideoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B12E70C524B84D6500277863 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B12E70CF24B84F8300277863 /* GTRecommendController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B12E70C624B84D7A00277863 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B12E70C724B84D8300277863 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B12E70C824B84D9A00277863 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B12E70CD24B84F4600277863 /* GTMineViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12E70D224B8527600277863 /* icon.bundle in Resources */,
 				B12E70B524B81A6B00277863 /* LaunchScreen.storyboard in Resources */,
 				B12E70B224B81A6B00277863 /* Assets.xcassets in Resources */,
 				B12E70B024B81A6A00277863 /* Main.storyboard in Resources */,
@@ -138,6 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12E70CE24B84F4600277863 /* GTMineViewController.swift in Sources */,
+				B12E70CC24B84EE800277863 /* GTVideoViewController.swift in Sources */,
+				B12E70CA24B84E5300277863 /* GTNewsViewController.swift in Sources */,
+				B12E70D024B84F8300277863 /* GTRecommendController.swift in Sources */,
 				B12E70AD24B81A6A00277863 /* ViewController.swift in Sources */,
 				B12E70A924B81A6A00277863 /* AppDelegate.swift in Sources */,
 				B12E70AB24B81A6A00277863 /* SceneDelegate.swift in Sources */,
@@ -287,6 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8235HY6K4;
 				INFOPLIST_FILE = "SA-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8235HY6K4;
 				INFOPLIST_FILE = "SA-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

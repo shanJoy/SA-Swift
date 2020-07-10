@@ -18,6 +18,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        if let windowScene = scene as? UIWindowScene {
+
+            let window = UIWindow(windowScene: windowScene)
+            
+            let tabBarController = UITabBarController()
+
+            
+            let newsController = GTNewsViewController()
+            let videoController = GTVideoViewController()
+            let recommendController = GTRecommendController()
+            let mineController = GTMineViewController()
+            
+            tabBarController.setViewControllers([newsController,videoController,recommendController,mineController], animated: false)
+            
+            let navigationController = UINavigationController(rootViewController: tabBarController)
+
+            window.rootViewController = navigationController
+
+            self.window = window
+            window.makeKeyAndVisible()
+        }
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -51,3 +74,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+
+extension UIColor {
+    //返回随机颜色
+    open class var randomColor:UIColor{
+        get
+        {
+            let red = CGFloat(arc4random()%256)/255.0
+            let green = CGFloat(arc4random()%256)/255.0
+            let blue = CGFloat(arc4random()%256)/255.0
+            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        }
+    }
+}
