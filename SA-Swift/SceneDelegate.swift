@@ -24,7 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             
             let tabBarController = UITabBarController()
-
+            //  👇这句的顺序很重要 注意别乱放 否则会影响后面四个控制器获取不到navigationBar的高度
+            let navigationController = UINavigationController(rootViewController: tabBarController)
             
             let newsController = GTNewsViewController()
             let videoController = GTVideoViewController()
@@ -33,8 +34,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
             tabBarController.setViewControllers([newsController,videoController,recommendController,mineController], animated: false)
             
-            let navigationController = UINavigationController(rootViewController: tabBarController)
-
             window.rootViewController = navigationController
 
             self.window = window
