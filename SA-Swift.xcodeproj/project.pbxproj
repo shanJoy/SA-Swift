@@ -28,6 +28,7 @@
 		B14DC4B724BFF44600604F0C /* GTDeleteCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14DC4B624BFF44600604F0C /* GTDeleteCellView.swift */; };
 		B1E4459124C0AA5000F55EB1 /* test in Resources */ = {isa = PBXBuildFile; fileRef = B1E4458F24C0AA5000F55EB1 /* test */; };
 		B1E4459224C0AA5000F55EB1 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1E4459024C0AA5000F55EB1 /* test.plist */; };
+		B1E4459424C12CFE00F55EB1 /* GTSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4459324C12CFE00F55EB1 /* GTSplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		B14DC4B624BFF44600604F0C /* GTDeleteCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTDeleteCellView.swift; sourceTree = "<group>"; };
 		B1E4458F24C0AA5000F55EB1 /* test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
 		B1E4459024C0AA5000F55EB1 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		B1E4459324C12CFE00F55EB1 /* GTSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTSplashView.swift; sourceTree = "<group>"; };
 		E4A7E1F1AB79B860153E040D /* Pods-SA-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SA-Swift.release.xcconfig"; path = "Target Support Files/Pods-SA-Swift/Pods-SA-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			children = (
 				B111E00924BBF4C100530090 /* GTScreen.swift */,
 				B111E00B24BD5C0B00530090 /* CommonBridgeHeader.h */,
+				B1E4459324C12CFE00F55EB1 /* GTSplashView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				B12E70CA24B84E5300277863 /* GTNewsViewController.swift in Sources */,
 				B111E00224BB0C5800530090 /* GTListLoader.swift in Sources */,
 				B111E00824BBF17400530090 /* GTNormalTableViewCell.swift in Sources */,
+				B1E4459424C12CFE00F55EB1 /* GTSplashView.swift in Sources */,
 				B12E70D024B84F8300277863 /* GTRecommendController.swift in Sources */,
 				B111E00624BBF0A000530090 /* GTDetailViewController.swift in Sources */,
 				B12E70AD24B81A6A00277863 /* ViewController.swift in Sources */,

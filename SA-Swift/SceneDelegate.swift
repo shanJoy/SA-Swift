@@ -38,6 +38,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             self.window = window
             window.makeKeyAndVisible()
+            
+            let splashView = GTSplashView.init(frame: self.window!.bounds)
+            self.window?.addSubview(splashView)
         }
 
     }
