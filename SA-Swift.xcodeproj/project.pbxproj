@@ -29,6 +29,9 @@
 		B1E4459124C0AA5000F55EB1 /* test in Resources */ = {isa = PBXBuildFile; fileRef = B1E4458F24C0AA5000F55EB1 /* test */; };
 		B1E4459224C0AA5000F55EB1 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1E4459024C0AA5000F55EB1 /* test.plist */; };
 		B1E4459424C12CFE00F55EB1 /* GTSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E4459324C12CFE00F55EB1 /* GTSplashView.swift */; };
+		B1E5744024CED419001779B5 /* GTVideoToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5743F24CED419001779B5 /* GTVideoToolBar.swift */; };
+		B1E5744224CED457001779B5 /* GTVideoCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5744124CED457001779B5 /* GTVideoCoverView.swift */; };
+		B1E5744424CED555001779B5 /* GTVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5744324CED555001779B5 /* GTVideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		B1E4458F24C0AA5000F55EB1 /* test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
 		B1E4459024C0AA5000F55EB1 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
 		B1E4459324C12CFE00F55EB1 /* GTSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTSplashView.swift; sourceTree = "<group>"; };
+		B1E5743F24CED419001779B5 /* GTVideoToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTVideoToolBar.swift; sourceTree = "<group>"; };
+		B1E5744124CED457001779B5 /* GTVideoCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTVideoCoverView.swift; sourceTree = "<group>"; };
+		B1E5744324CED555001779B5 /* GTVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTVideoPlayer.swift; sourceTree = "<group>"; };
 		E4A7E1F1AB79B860153E040D /* Pods-SA-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SA-Swift.release.xcconfig"; path = "Target Support Files/Pods-SA-Swift/Pods-SA-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				B12E70C424B84D4800277863 /* Controller */,
+				B1E5743D24CED36B001779B5 /* VIew */,
+				B1E5743E24CED378001779B5 /* Model */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -231,6 +239,23 @@
 				B1E4459024C0AA5000F55EB1 /* test.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		B1E5743D24CED36B001779B5 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				B1E5743F24CED419001779B5 /* GTVideoToolBar.swift */,
+				B1E5744124CED457001779B5 /* GTVideoCoverView.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		B1E5743E24CED378001779B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1E5744324CED555001779B5 /* GTVideoPlayer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D6C642E039F5B8AFAA65425F /* Frameworks */ = {
@@ -372,11 +397,14 @@
 				B12E70CE24B84F4600277863 /* GTMineViewController.swift in Sources */,
 				B14DC4B724BFF44600604F0C /* GTDeleteCellView.swift in Sources */,
 				B12E70CC24B84EE800277863 /* GTVideoViewController.swift in Sources */,
+				B1E5744024CED419001779B5 /* GTVideoToolBar.swift in Sources */,
 				B111E00D24BD635D00530090 /* GTSearchBar.swift in Sources */,
 				B111E00424BB0C8100530090 /* GTListItem.swift in Sources */,
 				B12E70CA24B84E5300277863 /* GTNewsViewController.swift in Sources */,
 				B111E00224BB0C5800530090 /* GTListLoader.swift in Sources */,
+				B1E5744424CED555001779B5 /* GTVideoPlayer.swift in Sources */,
 				B111E00824BBF17400530090 /* GTNormalTableViewCell.swift in Sources */,
+				B1E5744224CED457001779B5 /* GTVideoCoverView.swift in Sources */,
 				B1E4459424C12CFE00F55EB1 /* GTSplashView.swift in Sources */,
 				B12E70D024B84F8300277863 /* GTRecommendController.swift in Sources */,
 				B111E00624BBF0A000530090 /* GTDetailViewController.swift in Sources */,
