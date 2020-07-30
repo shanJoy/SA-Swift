@@ -32,6 +32,8 @@
 		B1E5744024CED419001779B5 /* GTVideoToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5743F24CED419001779B5 /* GTVideoToolBar.swift */; };
 		B1E5744224CED457001779B5 /* GTVideoCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5744124CED457001779B5 /* GTVideoCoverView.swift */; };
 		B1E5744424CED555001779B5 /* GTVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5744324CED555001779B5 /* GTVideoPlayer.swift */; };
+		B1E5744624D308E4001779B5 /* GTLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E5744524D308E4001779B5 /* GTLogin.swift */; };
+		B1E5744924D30A30001779B5 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5744824D30A30001779B5 /* TencentOpenAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		B1E5743F24CED419001779B5 /* GTVideoToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTVideoToolBar.swift; sourceTree = "<group>"; };
 		B1E5744124CED457001779B5 /* GTVideoCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTVideoCoverView.swift; sourceTree = "<group>"; };
 		B1E5744324CED555001779B5 /* GTVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTVideoPlayer.swift; sourceTree = "<group>"; };
+		B1E5744524D308E4001779B5 /* GTLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTLogin.swift; sourceTree = "<group>"; };
+		B1E5744824D30A30001779B5 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		E4A7E1F1AB79B860153E040D /* Pods-SA-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SA-Swift.release.xcconfig"; path = "Target Support Files/Pods-SA-Swift/Pods-SA-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				350E38817DD403B743DC45A9 /* libPods-SA-Swift.a in Frameworks */,
+				B1E5744924D30A30001779B5 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +105,7 @@
 		B12E70A724B81A6A00277863 /* SA-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				B1E5744724D309EC001779B5 /* GTFramework */,
 				B12E70BC24B84C9600277863 /* News */,
 				B12E70BF24B84CC200277863 /* Video */,
 				B12E70BE24B84CB100277863 /* Recommend */,
@@ -132,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				B12E70C624B84D7A00277863 /* Model */,
-				B12E70C724B84D8300277863 /* View */,
 				B12E70C824B84D9A00277863 /* Controller */,
 			);
 			path = Mine;
@@ -213,15 +218,9 @@
 		B12E70C624B84D7A00277863 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B1E5744524D308E4001779B5 /* GTLogin.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		B12E70C724B84D8300277863 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B12E70C824B84D9A00277863 /* Controller */ = {
@@ -256,6 +255,14 @@
 				B1E5744324CED555001779B5 /* GTVideoPlayer.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B1E5744724D309EC001779B5 /* GTFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B1E5744824D30A30001779B5 /* TencentOpenAPI.framework */,
+			);
+			path = GTFramework;
 			sourceTree = "<group>";
 		};
 		D6C642E039F5B8AFAA65425F /* Frameworks */ = {
@@ -405,6 +412,7 @@
 				B1E5744424CED555001779B5 /* GTVideoPlayer.swift in Sources */,
 				B111E00824BBF17400530090 /* GTNormalTableViewCell.swift in Sources */,
 				B1E5744224CED457001779B5 /* GTVideoCoverView.swift in Sources */,
+				B1E5744624D308E4001779B5 /* GTLogin.swift in Sources */,
 				B1E4459424C12CFE00F55EB1 /* GTSplashView.swift in Sources */,
 				B12E70D024B84F8300277863 /* GTRecommendController.swift in Sources */,
 				B111E00624BBF0A000530090 /* GTDetailViewController.swift in Sources */,
@@ -557,6 +565,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8235HY6K4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SA-Swift/GTFramework",
+				);
 				INFOPLIST_FILE = "SA-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -578,6 +590,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N8235HY6K4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SA-Swift/GTFramework",
+				);
 				INFOPLIST_FILE = "SA-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (

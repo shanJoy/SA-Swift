@@ -10,8 +10,8 @@
 #define CommonBridgeHeader_h
 
 #import <SDWebImage/UIImageView+WebCache.h>
-//#import <TencentOpenAPI/QQApiInterface.h>
-//#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+#import <TencentOpenAPI/TencentOAuth.h>
 #import <YYModel.h>
 #import <AFNetworking.h>
 #import "MJRefresh.h"
